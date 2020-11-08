@@ -1,0 +1,25 @@
+{
+  "name": "moly-tweak",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build --experimental-scope-hoisting src/manifest.json",
+    "clean": "rimraf dist",
+    "watch": "parcel watch --no-hmr src/manifest.json"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.126",
+    "@types/lodash-es": "^4.17.3",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-web-extension": "^1.6.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.0.5"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.15",
+    "webextension-polyfill-ts": "^0.21.0"
+  },
+  "browserslist": [
+    "last 2 Chrome versions"
+  ]
+}

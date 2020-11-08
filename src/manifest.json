@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "Moly Tab Tweak",
+  "version": "0.1.0",
+
+  "description": "An utility for tabs.",
+
+  "icons": {
+    "16": "icons/16.png",
+    "128": "icons/128.png"
+  },
+
+  "background": {
+    "scripts": ["scripts/background.ts"],
+    "persistent": true
+  },
+
+  "commands": {
+    "move-end-open-next": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+E",
+        "mac": "MacCtrl+Shift+E"
+      },
+      "description": "Move current tab to the end and open next tab"
+    },
+    "move-front-open-next": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+A",
+        "mac": "MacCtrl+Shift+A"
+      },
+      "description": "Move current tab to the front and open next tab"
+    }
+  },
+
+  "permissions": ["tabs"]
+}
